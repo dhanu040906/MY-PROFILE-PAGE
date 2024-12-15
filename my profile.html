@@ -13,7 +13,7 @@
         }
         .intro {
             font-size: 20px;
-            text-align: left;
+            text-align: center;
             margin-top: 5px;
             margin-bottom: 1px;
         }
@@ -21,11 +21,15 @@
             font-size: 40px;
             margin-top: 1px;
             margin-bottom: 2px;
-            
+            text-align: center;
         }
         .myimg {
-            float: right;
-            border-radius: 50%;
+            float:left;
+            border-radius: 7px;
+
+        }
+        .something{
+            height: 20px;
         }
         .sector {
             position: relative;
@@ -54,7 +58,7 @@
             opacity: 0;
             transition: opacity 1.5s;
         }
-        .inside::before {
+        /* .inside::before {
             content: "";
             position: absolute;
             left: 50%;
@@ -64,7 +68,7 @@
             border-width: 8px;
             border-style: solid;
             border-color:  blue transparent transparent transparent;
-        }
+        } */
         .sector:hover .inside {
             top: 120%;
             visibility: visible;
@@ -75,23 +79,26 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+        
+
         }
         
     </style>  
 </head>
 <body class="img">
     <div >
-    <div>
-        <img src="./button5.jpg" alt="my image" width="200px" height="150px" class="myimg">
-    </div>
+
     <div>
         <p class="intro"><b>Hi there,</b></p>
         <p class="para2">This is</p>
         <p class="para2"><b>JAYA REDDY GARI DHANUNJAYA REDDY</b></p>
         <p class="intro"><b>This is the page where you can find about me</b></p>
     </div>
-
+    <div>
+        <img src="./button5.jpg" alt="my image" width="200px" height="150px" class="myimg">
+    </div>
     <div class="display">
+
         <div class="sector">
             <span class="inside">My name is JAYA REDDY GARI DHANUNJAYA REDDY<br>
                 I was born on 4th September 2006<br>
@@ -126,3 +133,4 @@
 </div>
 </body>
 </html>
+
